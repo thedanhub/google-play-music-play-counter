@@ -4,15 +4,15 @@ Some months ago Google dropped the Google Play Music service, but allowed users 
 
 The problem with this takeout file is that it generates _separate_ CSV files for each track, such as this:
 
-'''
+```
 Title,Album,Artist,Duration (ms),Rating,Play Count,Removed,Playlist Index
 "Instant Crush (feat. Julian Casablancas)","Random Access Memories","Daft Punk","337525","0","79","","40"
-'''
+```
 
 This makes it difficult to see global statistics for your music collection, in case you care to do so. I was curious to see which songs I was listening the most back when I was using Google Play Music, so I created this script simply to loop over all the individual CSV files and prepare an ordered list of your tracks, sorted by number of play counts.
 
 ## Example output
-'''
+```
 [1] 79 - Instant Crush (feat. Julian Casablancas), Daft Punk [Random Access Memories]
 [2] 35 - Get Lucky (feat. Pharrell Williams), Daft Punk [Random Access Memories]
 [3] 34 - Lose Yourself to Dance (feat. Pharrell Williams), Daft Punk [Random Access Memories]
@@ -33,6 +33,6 @@ This makes it difficult to see global statistics for your music collection, in c
 [18] 9 - The Tip Of The Iceberg, Owl City [Ocean Eyes]
 [19] 9 - Peacemaker, Green Day [21st Century Breakdown]
 [20] 8 - Songbird, Oasis [Heathen Chemistry]
-'''
+```
 
 Lots of Daft Punk, as it should be.
